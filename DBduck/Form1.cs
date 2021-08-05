@@ -36,7 +36,7 @@ namespace DBduck
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("INSERTed SUCCESSFUL");
+                MessageBox.Show("INSERTed for SUCCESSFUL");
             }
 
             catch(SqlException ex )
