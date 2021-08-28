@@ -28,7 +28,7 @@ namespace DBduck
             int StdID = int.Parse(txtID.Text);
             string StdName = txtName.Text;
             
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='D:\DB gar\DBtest1.mdf';Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='E:\C# practical\git\DB gar\DBtest1.mdf';Integrated Security=True;Connect Timeout=30");
             string qry = "INSERT INTO STUDENT VALUES ("+StdID+",'"+StdName+"')";
             SqlCommand cmd = new SqlCommand(qry, con);
 
@@ -36,7 +36,10 @@ namespace DBduck
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("anton INSERTed for SUCCESSFUL");
+
+
+                MessageBox.Show("INSERT SUCCESSFUL hehe");
+
             }
 
             catch(SqlException ex )
