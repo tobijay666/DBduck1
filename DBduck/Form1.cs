@@ -38,7 +38,9 @@ namespace DBduck
                 cmd.ExecuteNonQuery();
 
 
-                MessageBox.Show("INSERT SUCCESSFUL hehe");
+
+                MessageBox.Show("INSERT SUCCESSFUL ");
+
 
             }
 
@@ -51,6 +53,14 @@ namespace DBduck
             {
                 con.Close();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Ranidu sistema = new Ranidu();
+            sistema.ShowDialog();
+            this.Close();
         }
     }
 }

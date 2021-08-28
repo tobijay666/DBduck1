@@ -16,7 +16,9 @@ namespace DBduck
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Anton());
+
+            Application.Run(new Ranidu());
+
         }
     }
 }
