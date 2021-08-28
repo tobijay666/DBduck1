@@ -16,7 +16,11 @@ namespace DBduck
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new thashiya());
+
+
+            Application.Run(new Ranidu());
+
+
         }
     }
 }
